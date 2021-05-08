@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node src/index.js",
-    "start:local": "npm run build && node src/index.js",
+    "start": "node -r dotenv/config src/index.js",
+    "start:local": "npm run build && node -r dotenv/config src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
